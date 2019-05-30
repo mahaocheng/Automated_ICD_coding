@@ -171,7 +171,7 @@ class ICDmodel(object):
             final_results_report = classification_report(test_y_true, test_y_pred, target_names=label_list, digits=4)
             print(final_results_report)
             # 保存结果
-            with open('../results/results.txt','w') as f:
+            with open('./results/results.txt','w') as f:
                 line = 'accuracy = {}, precision = {}, recall = {}, f1_score = {}'.format(accuracy, precision,recall, f1)
                 f.write(line + '\n')
                 f.write(final_results_report)
