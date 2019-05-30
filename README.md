@@ -1,6 +1,6 @@
 # Automated_ICD_coding
-The code for our paper 'Automated ICD Coding Based on Word Embedding with Entry Embedding and Attention Mechanism(基于融合条目词嵌入和注意力机制的自动ICD编码)'
-## Data Description
+The code for our paper 'Automated ICD Coding Based on Word Embedding with Entry Embedding and Attention Mechanism (基于融合条目词嵌入和注意力机制的自动ICD编码)'
+## 1. Data Description
   Because the data is private, it is not available for public. 
   Raw data is very large and complicated, so we should extract the text data that we need. The code for extracting text data is in the folder 'extract_data'.The text data includes 6 kinds of texts which have entry names (chief complaint, present illness history, examination report, first progress note, ward-round records, discharge records) and the label(ICD-10 diagnose code). All the chinese texts have been tokenized by jieba tokenizer. 
 ```
@@ -10,7 +10,7 @@ validation data         7571
 test data               7571
 -------------------------------
 ```
-## Model Description
+## 2. Model Description
 The framework of our proposed model includes a two-layer BiLSTM text encoder and a full connected network classifier.
 Text encoder includes three modules:
 1. word embedding with entry embedding module;
@@ -23,7 +23,7 @@ See in the below picture:
 ### keyword attention module:
 ![picture](https://github.com/zhanghk-pku/Automated_ICD_coding/blob/master/keyword_attention.png)
 
-## some relate works
+## 3. some relate works
 1. Scheurwegs E, Luyckx K, Luyten L, et al. Assigning clinical codes with data-driven concept representation on Dutch clinical free text[J]. Journal of biomedical informatics, 2017, 69: 118-127.
 2. Duarte F, Martins B, Pinto C S, et al. Deep neural models for ICD-10 coding of death certificates and autopsy reports in free-text[J]. Journal of biomedical informatics, 2018, 80: 64-77
 3. Mullenbach J, Wiegreffe S, Duke J, et al. Explainable prediction of medical codes from clinical text[J]. arXiv preprint arXiv:1802.05695, 2018
