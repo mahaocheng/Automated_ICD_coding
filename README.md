@@ -23,7 +23,11 @@ See in the below picture:
 ### keyword attention module:
 ![picture](https://github.com/zhanghk-pku/Automated_ICD_coding/blob/master/keyword_attention.png)
 
-## 3. some relate works
+## 3. Train and Test Model
+```
+python run_model.py
+```
+## 4. Some Relate Works
 1. Scheurwegs E, Luyckx K, Luyten L, et al. Assigning clinical codes with data-driven concept representation on Dutch clinical free text[J]. Journal of biomedical informatics, 2017, 69: 118-127.
 2. Duarte F, Martins B, Pinto C S, et al. Deep neural models for ICD-10 coding of death certificates and autopsy reports in free-text[J]. Journal of biomedical informatics, 2018, 80: 64-77
 3. Mullenbach J, Wiegreffe S, Duke J, et al. Explainable prediction of medical codes from clinical text[J]. arXiv preprint arXiv:1802.05695, 2018
