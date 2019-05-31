@@ -25,7 +25,10 @@ See in the below picture:
 
 ## 3. Train and Test Model
 ```
-python run_model.py
+raw data path: /home/pkudata/medical_home_page_source_data/medical_home_page_8.2M.data
+train, validation and test set path: /home/yanrui/ICD/data
+train and test command:  python run_model.py
+*Before training and testing, please ensure your data path and results path are right.
 ```
 ## 4. Some Relate Works
 1. Scheurwegs E, Luyckx K, Luyten L, et al. Assigning clinical codes with data-driven concept representation on Dutch clinical free text[J]. Journal of biomedical informatics, 2017, 69: 118-127.
